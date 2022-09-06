@@ -63,6 +63,7 @@ class calendarTimer {
     this.isActive = false;
     const interfaceTime = this.convertMs(0);
     this.onTick(interfaceTime);
+    refs.btnStart.disabled = true;
     Notify.success('Done');
   }
 
